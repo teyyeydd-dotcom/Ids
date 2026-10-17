@@ -47,9 +47,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # ======================= CONFIGURATION =======================
-API_ID = int(os.getenv("API_ID", "37315449"))
-API_HASH = os.getenv("API_HASH", "6d6b368c86280ce7711632567cc4cfd1")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8982809911:AAHZubtv7f0LTnSq5hskyM2zHXRl3VKSuUw")
+API_ID = int(os.environ["API_ID"])
+API_HASH = os.environ["API_HASH"]
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 OWNER_IDS = [7795080978, 5498096445]  # ✅ FIXED: Updated owner IDs
 
 KEEP_ALIVE_INTERVAL = 12
